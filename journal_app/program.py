@@ -43,4 +43,5 @@ def run_event_loop():
     print('Goodbye')
 
 
-main()
+if __name__ == '__main__':
+    main()

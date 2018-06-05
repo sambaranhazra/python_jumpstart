@@ -1,15 +1,21 @@
 import os
-from os import close
 
 
 def load(name):
-    # todo: populate from file if it exists
+    """
+    Creates and loads journal\n
+    :param name: The base name of the journal to load\n
+    :return: A new journal data structure
+    """
     data = []
-    file_name=get_full_pathname(name)
+    file_name = get_full_pathname(name)
+
     if os.path.exists(file_name):
         with open(file_name, 'r') as fin:
-            for entry in fin.readline():
-                print()
+            for entry in fin.readlines():
+                data.append(entry.rstrip())
+
+    return data
 
 
 def save(name, journal_data):
