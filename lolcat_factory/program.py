@@ -15,7 +15,7 @@ def main():
     download_cats(folder)
     # display cats
     display_cats(folder)
-    print("Download complete.")
+
 
 
 def print_header():
@@ -40,6 +40,7 @@ def download_cats(folder):
         name = "lolcat_{}".format(i)
         cat_service.get_cat(folder, name)
         print("Downloaded {}".format(name))
+    print("Download complete.")
 
 
 def display_cats(folder):
