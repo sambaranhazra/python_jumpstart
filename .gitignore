@@ -1,2 +1,4 @@
 */venv/
 */.idea/
+*/__pycache__
+lolcat_factory/cat_pictures
