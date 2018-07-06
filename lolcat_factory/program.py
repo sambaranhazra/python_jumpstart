@@ -50,7 +50,7 @@ def display_cats(folder):
     elif platform.system() == "Linux":
         subprocess.call(["xdg-open", folder])
     elif platform.system() == "Windows":
-        subprocess.call(["start", folder])
+        subprocess.call(["start", folder], shell=True)
     else:
         print("We don't support your os.")
 
