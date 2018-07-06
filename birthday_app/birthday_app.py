@@ -40,5 +40,5 @@ def main():
     number_of_days = compute_days_between_dates(birthday, today)
     print_birthday_information(number_of_days)
 
-
-main()
+if __name__=="__main__":
+    main()
