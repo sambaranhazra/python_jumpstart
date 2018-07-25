@@ -62,7 +62,7 @@ def search_folders(folder, text):
 
 def search_file(file_name, search_text):
     # matches = []
-    with open(file_name, "r", encoding="utf-8") as fin:
+    with open(file_name, "r", encoding="utf-8", errors='ignore') as fin:
         number = 0
         for line in fin:
             number += 1
