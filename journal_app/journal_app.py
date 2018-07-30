@@ -31,7 +31,7 @@ def run_event_loop():
     journal_data = journal.load(journal_name)
     while cmd != 'x':
         cmd = input('[L]ist entries, [A]dd an entry, E[x]it: ')
-        cmd = cmd.lower().strip();
+        cmd = cmd.lower().strip()
         if cmd == 'l':
             list_entries(journal_data)
         elif cmd == 'a':
