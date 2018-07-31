@@ -18,36 +18,36 @@ def calculate(**kw):
     return "{} {}".format(message, result)
 
 
-def divide(first, float, second):
+def divide(first, is_float, second):
     result = first / second
-    if float:
+    if is_float:
         result = float(result)
     else:
         result = int(result)
     return result
 
 
-def multiply(first, float, second):
+def multiply(first, is_float, second):
     result = first * second
-    if float:
+    if is_float:
         result = float(result)
     else:
         result = int(result)
     return result
 
 
-def subtract(first, float, second):
+def subtract(first, is_float, second):
     result = first - second
-    if float:
+    if is_float:
         result = float(result)
     else:
         result = int(result)
     return result
 
 
-def add(first, float, second):
+def add(first, is_float, second):
     result = first + second
-    if float:
+    if is_float:
         result = float(result)
     else:
         result = int(result)

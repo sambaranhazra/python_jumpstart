@@ -39,7 +39,7 @@ def get_multiples(number=1, count=10):
         yield number * i
 
 
-default_multiples = get_multiples(2,3)
+default_multiples = get_multiples(2, 3)
 print(list(default_multiples))
 
 
@@ -48,6 +48,7 @@ def get_unlimited_multiples(num=1):
     while True:
         multiplier += 1
         yield num * multiplier
+
 
 sevens = get_unlimited_multiples(7)
 print([next(sevens) for i in range(15)])
