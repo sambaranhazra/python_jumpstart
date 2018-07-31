@@ -1,6 +1,10 @@
 def statistics(file):
     with open(file, encoding='utf8') as f:
-        print("Lines: ".format(len(f.readlines())))
+        text = f.read()
+        lines = text.count('\n') + 1
+        words = len(text.split())
+        characters = len(text)
+        return {'lines': lines, 'words': words, 'characters': characters}
 
 
-statistics('story.txt')
+print(statistics('story.txt'))
