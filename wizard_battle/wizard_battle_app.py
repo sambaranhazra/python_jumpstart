@@ -31,7 +31,7 @@ def game_loop():
         active_creature = random.choice(creatures)
         print("A {} of level {} has appeared from a dark and foggy forest.".format(active_creature.name,
                                                                                    active_creature.level))
-        cmd = input("Do you [a]ttack, [r]un away, or [l]ook around?")
+        cmd = input("Do you [a]ttack, [r]un away, or [l]ook around? (press x to exit)")
         if cmd == "a":
             if hero.attack(active_creature):
                 creatures.remove(active_creature)
@@ -45,7 +45,7 @@ def game_loop():
             print("{} looking around for creatures".format(hero.name))
             for creature in creatures:
                 print("* {} of level {} near.".format(creature.name, creature.level))
-        else:
+        elif cmd == 'x':
             print("OK, exiting game.")
             break
 
