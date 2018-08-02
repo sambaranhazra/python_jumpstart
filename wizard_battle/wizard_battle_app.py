@@ -2,7 +2,7 @@ import random
 
 import time
 
-from wizard_battle.actors import Wizard, Creature, SmallAnimal, Dragon
+from actors.actors import Wizard, Creature, SmallAnimal, Dragon
 
 
 def main():

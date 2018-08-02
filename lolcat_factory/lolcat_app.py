@@ -17,7 +17,6 @@ def main():
     display_cats(folder)
 
 
-
 def print_header():
     print("-------------------")
     print("   CAT FACTORY")
