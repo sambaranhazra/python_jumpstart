@@ -10,7 +10,7 @@ from csv import DictWriter
 
 
 def add_user(first, last):
-    with open('users.csv', 'a', newline='') as file:
+    with open('file_copy/users.csv', 'a', newline='') as file:
         csv_writer = DictWriter(file, ["First Name", "Last Name"])
         # csv_writer.writeheader()
         csv_writer.writerow({

@@ -1,3 +1,4 @@
 requests
 cx_Oracle==6.4.1
 bs4
+autopep8

@@ -8,4 +8,4 @@ def find_and_replace(source, find_word, replace_word):
         f.write(text)
 
 
-find_and_replace('story.txt', 'Alice', 'Sambaran')
+find_and_replace('file_copy/story.txt', 'Sambaran', 'Alice')
