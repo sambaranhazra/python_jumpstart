@@ -17,5 +17,5 @@ def copy_and_reverse(src, dest):
 
 
 if __name__ == '__main__':
-    copy_file('story.txt', 'story_copy.txt')
-    copy_and_reverse('story.txt', 'story_reversed.txt')
+    copy_file('file_copy/story.txt', 'file_copy/story_copy.txt')
+    copy_and_reverse('file_copy/story.txt', 'file_copy/story_reversed.txt')

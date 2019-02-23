@@ -7,4 +7,4 @@ def statistics(file):
         return {'lines': lines, 'words': words, 'characters': characters}
 
 
-print(statistics('story.txt'))
+print(statistics('file_copy/story.txt'))

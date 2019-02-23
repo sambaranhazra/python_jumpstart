@@ -5,3 +5,4 @@ venv/
 */__pycache__
 lolcat_factory/cat_pictures
 .env
+.vscode/
